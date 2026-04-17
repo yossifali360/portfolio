@@ -20,7 +20,7 @@ function storageRemotePatterns(): ImageRemotePatterns {
   addHost("https", "api.youssef-ali.com");
   addHost("http", "127.0.0.1", "8000");
   addHost("http", "localhost", "8000");
-  const api = process.env.NEXT_PUBLIC_LARAVEL_API_URL;
+  const api = process.env.NEXT_PUBLIC_BASE_API_URL;
   if (api) {
     try {
       const u = new URL(api);
