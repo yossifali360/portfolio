@@ -1,0 +1,65 @@
+{
+  "common": {
+    "viewWork": "عرض الأعمال",
+    "getInTouch": "تواصل معي",
+    "downloadCv": "السيرة الذاتية",
+    "viewProject": "عرض المشروع",
+    "regionKsa": "السعودية",
+    "regionMiddleEast": "الشرق الأوسط"
+  },
+  "hero": {
+    "role": "مطوّر واجهات أمامية",
+    "greeting": "مرحباً، أنا",
+    "name": "يوسف علي جلال",
+    "intro": "مطوّر واجهات أمامية أركّز على تطبيقات ويب فعّالة، والأداء وتجربة المستخدم، وعملت مع علامات مثل Ford وHyundai. أبني بـ React وNext.js — هندسة قابلة للتوسع، SEO، وكود نظيف."
+  },
+  "sections": {
+    "work": "أعمال مختارة",
+    "experience": "الخبرات",
+    "experienceTitle": "أماكن عملت فيها",
+    "skills": "المهارات",
+    "skillsTitle": "التقنيات والأدوات",
+    "education": "التعليم",
+    "educationTitle": "المسار الأكاديمي",
+    "contact": "لنعمل معاً."
+  },
+  "skillsGroups": {
+    "coreStack": "التقنيات الأساسية والاختبار",
+    "stateUi": "الحالة وأنظمة الواجهة",
+    "toolsArch": "الأدوات والهندسة"
+  },
+  "footer": {
+    "cta": "لنعمل معاً.",
+    "email": "youssef@youssef-ali.com",
+    "phone": "+20 1062697154",
+    "tel" : "الهاتف",
+    "whatsapp" : "واتساب:",
+    "location": "القاهرة، مصر"
+  },
+  "toggles": {
+    "locale": "اللغة",
+    "theme": "المظهر",
+    "en": "EN",
+    "ar": "AR",
+    "light": "فاتح",
+    "dark": "داكن"
+  },
+  "form": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "message": "الرسالة",
+    "submit": "إرسال",
+    "namePlaceholder": "اسمك",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "رسالتك...",
+    "nameRequired": "الاسم مطلوب",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "أدخل بريداً إلكترونياً صحيحاً",
+    "messageRequired": "الرسالة مطلوبة",
+    "messageMin": "الرسالة يجب أن تكون 10 أحرف على الأقل",
+    "success": "شكراً! تم إرسال رسالتك.",
+    "successTitle": "تم استلام رسالتك",
+    "successBody": "شكراً لتواصلك معي. وصلتني رسالتك وسأرد عليك في أقرب وقت ممكن.",
+    "successDismiss": "إغلاق"
+  }
+}

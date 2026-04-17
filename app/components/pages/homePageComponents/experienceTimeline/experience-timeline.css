@@ -1,0 +1,46 @@
+.experience-timeline .vertical-timeline-element-content-arrow {
+  border-right-color: rgb(38 38 38) !important;
+}
+
+.experience-timeline
+  .vertical-timeline-element.vertical-timeline-element--right
+  .vertical-timeline-element-content-arrow,
+.experience-timeline
+  .vertical-timeline-element:nth-child(even)
+  .vertical-timeline-element-content-arrow {
+  border-left-color: rgb(38 38 38) !important;
+  border-right-color: transparent !important;
+  rotate: 180deg;
+}
+
+.experience-timeline .vertical-timeline-element-date {
+  color: rgb(163 163 163) !important;
+}
+
+@media (min-width: 1170px) {
+  .experience-timeline
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    color: rgb(163 163 163) !important;
+  }
+}
+
+html.light .experience-timeline .vertical-timeline-element-content-arrow {
+  border-right-color: rgb(245 245 245) !important;
+}
+
+html.light
+  .experience-timeline
+  .vertical-timeline-element.vertical-timeline-element--right
+  .vertical-timeline-element-content-arrow,
+html.light
+  .experience-timeline
+  .vertical-timeline-element:nth-child(even)
+  .vertical-timeline-element-content-arrow {
+  border-left-color: rgb(245 245 245) !important;
+  border-right-color: transparent !important;
+}
+
+html.light .experience-timeline .vertical-timeline-element-date {
+  color: rgb(115 115 115) !important;
+}

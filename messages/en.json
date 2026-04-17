@@ -1,0 +1,65 @@
+{
+  "common": {
+    "viewWork": "View work",
+    "getInTouch": "Get in touch",
+    "downloadCv": "Resume",
+    "viewProject": "View project",
+    "regionKsa": "KSA",
+    "regionMiddleEast": "Middle East"
+  },
+  "hero": {
+    "role": "Front-End Developer",
+    "greeting": "Hi, I'm",
+    "name": "Youssef Ali Galal",
+    "intro": "I’m a Front-End Developer focused on highly efficient web applications. I care about performance, UX/UI, and shipping for brands like Ford and Hyundai. I build with React and Next.js — scalable architecture, solid SEO, and clean code."
+  },
+  "sections": {
+    "work": "Selected work",
+    "experience": "Experience",
+    "experienceTitle": "Where I've worked",
+    "skills": "Skills",
+    "skillsTitle": "Tech & tools I use",
+    "education": "Education",
+    "educationTitle": "Academic background",
+    "contact": "Let's work together."
+  },
+  "skillsGroups": {
+    "coreStack": "Core stack & testing",
+    "stateUi": "State & UI systems",
+    "toolsArch": "Tools & architecture"
+  },
+  "footer": {
+    "cta": "Let's work together.",
+    "email": "youssef@youssef-ali.com",
+    "phone": "+20 1062697154",
+    "tel" : "Phone",
+    "whatsapp" : "Whatsapp",
+    "location": "Cairo, Egypt"
+  },
+  "toggles": {
+    "locale": "Language",
+    "theme": "Theme",
+    "en": "EN",
+    "ar": "AR",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Send message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "you@example.com",
+    "messagePlaceholder": "Your message...",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Enter a valid email",
+    "messageRequired": "Message is required",
+    "messageMin": "Message must be at least 10 characters",
+    "success": "Thanks! Your message was sent.",
+    "successTitle": "Message received",
+    "successBody": "Thank you for getting in touch. Your note is in my inbox and I will reply as soon as I can.",
+    "successDismiss": "Dismiss"
+  }
+}
