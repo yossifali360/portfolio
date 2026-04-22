@@ -7,24 +7,30 @@ type ImageRemotePatterns = NonNullable<
   NonNullable<NextConfig["images"]>["remotePatterns"]
 >;
 
-function storageRemotePatterns(): ImageRemotePatterns {
+function addImageAndStoragePatterns(
+  patterns: ImageRemotePatterns,
+  protocol: "http" | "https",
+  hostname: string,
+  port?: string,
+) {
+  const base = { protocol, hostname, ...(port ? { port } : {}) };
+  patterns.push({ ...base, pathname: "/storage/**" });
+  patterns.push({ ...base, pathname: "/images/**" });
+}
+
+function imageRemotePatterns(): ImageRemotePatterns {
   const patterns: ImageRemotePatterns = [];
-  function addHost(
-    protocol: "http" | "https",
-    hostname: string,
-    port?: string,
-  ) {
-    const base = { protocol, hostname, ...(port ? { port } : {}) };
-    patterns.push({ ...base, pathname: "/storage/**" });
-  }
-  addHost("https", "api.youssef-ali.com");
-  addHost("http", "127.0.0.1", "8000");
-  addHost("http", "localhost", "8000");
+
+  addImageAndStoragePatterns(patterns, "https", "api.youssef-ali.com");
+  addImageAndStoragePatterns(patterns, "http", "127.0.0.1", "8000");
+  addImageAndStoragePatterns(patterns, "http", "localhost", "8000");
+
   const api = process.env.NEXT_PUBLIC_BASE_API_URL;
   if (api) {
     try {
       const u = new URL(api);
-      addHost(
+      addImageAndStoragePatterns(
+        patterns,
         (u.protocol.replace(":", "") as "http" | "https") || "https",
         u.hostname,
         u.port || undefined,
@@ -36,7 +42,7 @@ function storageRemotePatterns(): ImageRemotePatterns {
 
 const nextConfig: NextConfig = {
   images: {
-    remotePatterns: storageRemotePatterns(),
+    remotePatterns: imageRemotePatterns(),
   },
 };
 
